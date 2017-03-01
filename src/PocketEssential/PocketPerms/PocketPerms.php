@@ -81,10 +81,10 @@ class PocketPerms extends PluginBase implements Listener
          $group = $this->getGroup($player);
          $format = $group->getNested("$group"."Chat");
 
-        $chatFormat = str_replace("{player_name}",$player->getName(),$format);
+        $chatFormat = str_replace("{name}",$player->getName(),$format);
         $tw = str_replace("{message}",$message,$chatFormat);
-        $tw3 = str_replace("{player_nametag}",$player->getNameTag(),$tw);
-        $final = str_replace("{color}",'%',$tw3);
+        $tw3 = str_replace("{nametag}",$player->getNameTag(),$tw);
+        $final = str_replace("&",'%',$tw3);
 
          return $final;
 
