@@ -22,18 +22,22 @@
 #
 # Varibles
 #
-# {player_name} {player_nametag} {message} {color}d,c etc
+# {name} {nametag} {message} (&)d,c etc
 #  Wanting support for another plugin? Let us know via our issue tracker!
 
 
 Member:
-  Chat: "[Member] {player_name} > {message}"
-  Nametag: "[Member] {player_name}"
+  Chat: "[Member] {name} > {message}"
+  Nametag: "[Member] {name}"
 
 Owner:
-  Chat: "[Owner] {player_name} > {message}"
-  Nametag: "[Owner] {player_name}"
+  Chat: "[Owner] {name} > {message}"
+  Nametag: "[Owner] {name}"
 
 Admin:
-  Chat: "[Admin] {player_name} > {message}"
-  Nametag: "[Admin] {player_name}"
+  Chat: "[Admin] {name} > {message}"
+  Nametag: "[Admin] {name}"
+
+CoOwner:
+  Chat: "[CoOwner] {name} > {message}"
+  Nametag: "[CoOwner] {name}
